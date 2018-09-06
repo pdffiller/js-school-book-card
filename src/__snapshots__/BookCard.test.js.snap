@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookCard> should renders correctly for new books 1`] = `
+<div
+  className="col-md-4"
+>
+  <div
+    className="card"
+  >
+    <img
+      alt="Happy"
+      className="card-img-top"
+      src="img.jpg"
+    />
+    <div
+      className="card-body"
+    >
+      <h5
+        className="card-title"
+      >
+        Happy
+      </h5>
+      <p
+        className="card-text"
+      >
+        Dima
+      </p>
+      <div
+        className="card-text"
+      >
+        2018
+         
+        <div
+          className="badge badge-success"
+        >
+          new
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BookCard> should renders correctly for old books 1`] = `
+<div
+  className="col-md-4"
+>
+  <div
+    className="card"
+  >
+    <img
+      alt="Happy"
+      className="card-img-top"
+      src="img.jpg"
+    />
+    <div
+      className="card-body"
+    >
+      <h5
+        className="card-title"
+      >
+        Happy
+      </h5>
+      <p
+        className="card-text"
+      >
+        Dima
+      </p>
+      <div
+        className="card-text"
+      >
+        2000
+         
+        <div
+          className="badge badge-secondary"
+        >
+          old
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

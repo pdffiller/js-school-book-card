@@ -1,0 +1,108 @@
+{
+  "kind": "books#volume",
+  "id": "dle2BgAAQBAJ",
+  "etag": "keOoJ2viflA",
+  "selfLink": "https://www.googleapis.com/books/v1/volumes/dle2BgAAQBAJ",
+  "volumeInfo": {
+    "title": "Happy!",
+    "authors": [
+      "Pharrell Williams"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "2015-10-06",
+    "description": "\u003cb\u003eGrammy Award winner Pharrell Williams's super-hit song “Happy” is now a picture book\u003cbr\u003e\u003cbr\u003e\u003c/b\u003eNominated for an Academy Award in 2014, “Happy” hit number one on Billboard’s Hot 100 list, and has topped the charts in more than seventy-five countries worldwide. Now Pharrell Williams brings his beloved song to the youngest of readers in photographs of children across cultures celebrating what it means to be happy. All the exuberance of the song pulses from these vibrant photographs of excited, happy kids. This is a picture book full of memorable, precious childhood moments that will move readers in the same way they were moved by the song.\u003cbr\u003e \u003cbr\u003e“Happy” has had the world dancing ever since it first hit the airwaves, and now the irresistibly cheerful tune will come to life on the page with Pharrell Williams’s very first picture book! A keepsake and true classic in the making.",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0698409086"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780698409088"
+      }
+    ],
+    "readingModes": {
+      "text": true,
+      "image": true
+    },
+    "pageCount": 32,
+    "printedPageCount": 40,
+    "printType": "BOOK",
+    "categories": [
+      "Juvenile Fiction / Performing Arts / Music",
+      "Juvenile Fiction / Stories in Verse"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.2.0.preview.3",
+    "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+    },
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=dle2BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73oTSGCH9TXti2UokoHMo3wDx7oi60KFABM2pJqnA2CpYENDLMAhXkVrAbmYtcIWhR4Dvyg_KrYi4Fsc9WuF8ALfwwS-Dk8swaRW9Jb6_BUlKqGilRGZTUSQushFA6SCiYDVR27&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=dle2BgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71S7x_ouWQcwpVZO5mQrn6yNIkKM5pbs4dS-A49CO5bE9V7h_JBTFRmf_liPq2oXqVHbSAvplB_delNX2tzRFuSg2YOzDaSKUbro2UMOfsSwuwZ-CCncKrp4QV4rRbBI5ZkHGYA&source=gbs_api",
+      "small": "http://books.google.com/books/content?id=dle2BgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70IQe91Oi5at9TLHfeKJQvArPtrxA9XW9305B3sw9k10x6o5QmmxCqi8Dj5Vqv3UWW1gzkSNOwG3Ryws4FNxMx7xY2t7m-qokWE9qvHZdGo7WdQbQOTXpA7CldZYFoqKyBDxoUB&source=gbs_api",
+      "medium": "http://books.google.com/books/content?id=dle2BgAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72h1sP7RDaYHgbcGOcw88-LajZINHDHjAxRBOM9j_ikEcQYw5RJjhHYIMxjMyGlGAqz9XZm62FtySM73IUXHsnJBd0wAI77AjJxPSYZ0-8MNpuYZWP8Y46URbisSJLNSUbVwQZm&source=gbs_api",
+      "large": "http://books.google.com/books/content?id=dle2BgAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71F6QLr-6Ig1n_H2ZM3VV_UTfLbAfI1uVDNnKuhn5ZSh6buvCObojoON1WGxpLH2z9igWUZ5enSLP8y5axmDlPJwjc6rgzlV_6IIumyaGWOpFao7pjOXj5vQpMuDfYQnoASCEiR&source=gbs_api",
+      "extraLarge": "http://books.google.com/books/content?id=dle2BgAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE726GzBPWhXlGf-kk_aGNgFp23vrMJCIVdS4jwXNPjyeUdWmfxIsJ5APew20JaZqRH_7jtY_jRMvaEQTCSNGJUGtCTadlPfzEU4EXMKRCLVdDK_9CZXp0dH-JlSDl8lWGDWefiP0&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.ua/books?id=dle2BgAAQBAJ&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=dle2BgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-dle2BgAAQBAJ"
+  },
+  "layerInfo": {
+    "layers": [
+      {
+        "layerId": "geo",
+        "volumeAnnotationsVersion": "4"
+      }
+    ]
+  },
+  "saleInfo": {
+    "country": "UA",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+      "amount": 541.38,
+      "currencyCode": "UAH"
+    },
+    "retailPrice": {
+      "amount": 378.97,
+      "currencyCode": "UAH"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=dle2BgAAQBAJ&rdid=book-dle2BgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+      {
+        "finskyOfferType": 1,
+        "listPrice": {
+          "amountInMicros": 5.4138E8,
+          "currencyCode": "UAH"
+        },
+        "retailPrice": {
+          "amountInMicros": 3.7897E8,
+          "currencyCode": "UAH"
+        }
+      }
+    ]
+  },
+  "accessInfo": {
+    "country": "UA",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.com.ua/books/download/Happy-sample-epub.acsm?id=dle2BgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+      "isAvailable": true,
+      "acsTokenLink": "http://books.google.com.ua/books/download/Happy-sample-pdf.acsm?id=dle2BgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=dle2BgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+  }
+}

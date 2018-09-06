@@ -1,0 +1,75 @@
+{
+  "kind": "books#volume",
+  "id": "k1ZnJINz9iwC",
+  "etag": "iwexABwEuQk",
+  "selfLink": "https://www.googleapis.com/books/v1/volumes/k1ZnJINz9iwC",
+  "volumeInfo": {
+    "title": "Discrete Mathematics for Computing",
+    "authors": [
+      "Rod Haggarty",
+      "Rod Haggarty Junior"
+    ],
+    "publisher": "Addison-Wesley",
+    "publishedDate": "2002",
+    "description": "B\u003e\" This is a short, concise introduction to key mathematical ideas for computer scientists which develops their understanding of discrete mathematics and its application in computing. The author presents numerous worked examples and practice exercises with full solutions so readers see how to work with the mathematical concepts covered, thereby developing their own competence. Reliance on previous mathematical experience is kept to a minimum, though some basic algebraic manipulation is required. The content constitutes an accepted core of mathematics for computer scientists (for example, the formal methods used in computer science draw heavily on the discrete mathematical concepts covered here, particularly logic, sets, relations and functions). The topics are presented in a well defined, logical order that build upon each other and are constantly reinforced by worked examples. Emphasis is placed on clear and careful explanations of basic ideas and on building confidence in developing mathematical competence through carefully selected exercises. This book is designed for computer scientists with modest familiarity of mathematics who are looking to understand the more mathematical side of computing and programming concepts.",
+    "industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0201730472"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780201730470"
+      }
+    ],
+    "readingModes": {
+      "text": false,
+      "image": false
+    },
+    "pageCount": 235,
+    "printedPageCount": 254,
+    "dimensions": {
+      "height": "24.00 cm",
+      "width": "17.10 cm",
+      "thickness": "1.30 cm"
+    },
+    "printType": "BOOK",
+    "categories": [
+      "Computers / Computer Science"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.0",
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=k1ZnJINz9iwC&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE71ZwaL22Us2ihiWuyjt3HyuXir4K7Zpy2vJh8AL9hohQwUCTW0y3TuhEde17tsJE9dpCScF6W0AozEwas8C-bLJ_L-JqmJxT_Yk8FiP3SxNBBqelGLwbxbw-3JL8Xc1rb9jSp7Y&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=k1ZnJINz9iwC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73TRO4dKey4X-CG_v3JWWtgccrm4T4_Lv_0Rwaosfr8USZCOEOaJDuka6edkI98_6huXnuz9sIAxLRcGkJWU3Wlf237FClHajO0YwONLafrDzZc7y8xYl_H82oWC3EdnJEaUdQ-&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.ua/books?id=k1ZnJINz9iwC&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=k1ZnJINz9iwC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-k1ZnJINz9iwC"
+  },
+  "saleInfo": {
+    "country": "UA",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+  },
+  "accessInfo": {
+    "country": "UA",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+      "isAvailable": false
+    },
+    "pdf": {
+      "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=k1ZnJINz9iwC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+  }
+}
