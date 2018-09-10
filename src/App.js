@@ -1,45 +1,52 @@
 import React from 'react';
-import BookCard from './BookCard';
+import BookInfo from './BookInfo';
+import { updateBookInfo, fetchBook } from './books';
 
-const getBookInfo = ({ id, volumeInfo }) => ({
-  id,
-  title: volumeInfo.title,
-  authors: volumeInfo.authors,
-  thumbnail: volumeInfo.imageLinks.thumbnail,
-  year: +volumeInfo.publishedDate.slice(0, 4),
-});
-
-const booksJson = [
-  require('./book.json'),
-  require('./book-2.json'),
-];
-
-const books = booksJson.map(getBookInfo);
-
-const Container = ({ children }) => (
-  <div className="container">
-    { children }
-  </div>
-);
 
 class App extends React.Component {
+  state = {
+    book: null,
+    loading: true,
+  }
+
+  changeBook = data => {
+    this.setState(
+      updateBookInfo(data)
+    );
+    this.setState({ loading: false });
+  }
+
+  loadBook() {
+    const { bookUrl } = this.props;
+    if (bookUrl == null) return;
+    fetchBook(bookUrl).then(this.changeBook);
+  }
+
+  componentDidMount() {
+    this.loadBook();
+  }
+
+  componentDidUpdate(prevProps) {
+    const { bookUrl } = this.props;
+    if (prevProps.bookUrl !== bookUrl) {
+      this.loadBook();
+    }
+  }
+
   render() {
+    const { book, loading } = this.state;
     return (
-      <Container>
+      <div className="container">
         <div className="row">
-        {books.map(
-          book => (
-            <BookCard
-              key={book.id}
-              thumbnail={book.thumbnail}
-              title={book.title}
-              authors={book.authors}
-              year={book.year}
+          { book && 
+            <BookInfo
+              book={book}
+              onChange={this.changeBook}
             />
-          )
-        )}
+          }
+          { loading && 'Loading ....' }
         </div>
-      </Container>
+      </div>
     );
   }
 }

@@ -10,9 +10,9 @@ const BookAgeBadge = ({ isNew }) => (
   <div className={`badge badge-${isNew ? 'success' : 'secondary'}`}>
     {isNew ? 'new' : 'old'}
   </div>
-)
+);
 
-const BookCard = ({ thumbnail, title, authors, year }) => (
+const BookCard = ({ thumbnail, title, authors, year, onViewModeClick }) => (
   <div className="col-md-4">
     <div className="card">
       <img
@@ -21,7 +21,11 @@ const BookCard = ({ thumbnail, title, authors, year }) => (
         alt={title}
       />
       <div className="card-body">
-        <h5 className="card-title">{title}</h5>
+        <h4 className="card-title">
+          <button className="btn btn-link" onClick={onViewModeClick}>
+            {title}
+          </button>
+        </h4>
           {authors ? authors.map(
             author => <BookAuthor key={author} author={author} />
           ) : 'no authors'}

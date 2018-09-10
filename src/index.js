@@ -5,7 +5,9 @@ import App from './App';
 
 
 ReactDOM.render(
-  <App />,
+  <App
+    bookUrl='https://www.googleapis.com/books/v1/volumes/dle2BgAAQBAJ'
+  />,
   document.getElementById('root')
 );
 
