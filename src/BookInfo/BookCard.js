@@ -12,7 +12,7 @@ const BookAgeBadge = ({ isNew }) => (
   </div>
 )
 
-const BookCard = ({ thumbnail, title, authors, year }) => (
+const BookCard = ({ thumbnail, title, authors, year, toggleView }) => (
   <div className="col-md-4">
     <div className="card">
       <img
@@ -21,7 +21,11 @@ const BookCard = ({ thumbnail, title, authors, year }) => (
         alt={title}
       />
       <div className="card-body">
-        <h5 className="card-title">{title}</h5>
+        <h4 className="card-title">
+          <button onClick={toggleView} className="btn btn-link">
+            {title}
+          </button>
+        </h4>
           {authors ? authors.map(
             author => <BookAuthor key={author} author={author} />
           ) : 'no authors'}
