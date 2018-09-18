@@ -1,0 +1,5 @@
+.active {
+  text-decoration: none;
+  pointer-events: none;
+  color: inherit;
+}

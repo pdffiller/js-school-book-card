@@ -13,38 +13,39 @@ const BookAgeBadge = ({ isNew }) => (
   </div>
 )
 
+const BookCardPure = ({ thumbnail, title, authors, year, toggleView }) => (
+  <div className="col-md-4">
+    <div className="card">
+      <img
+        className="card-img-top"
+        src={thumbnail}
+        alt={title}
+      />
+      <div className="card-body">
+        <h4 className="card-title">
+          <button onClick={toggleView} className="btn btn-link">
+            {title}
+          </button>
+        </h4>
+          {authors ? authors.map(
+            author => <BookAuthor key={author} author={author} />
+          ) : 'no authors'}
+        <div className="card-text">
+          {year}
+          {' '}
+          <BookAgeBadge isNew={year > 2010} />
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+
 const BookCard = ({ toggleView }) => (
   <BookInfoProvider.Consumer>
-    {({ book }) => {
-      if (book == null) return null;
-      const { thumbnail, title, authors, year } = book;
-      return (
-        <div className="col-md-4">
-          <div className="card">
-            <img
-              className="card-img-top"
-              src={thumbnail}
-              alt={title}
-            />
-            <div className="card-body">
-              <h4 className="card-title">
-                <button onClick={toggleView} className="btn btn-link">
-                  {title}
-                </button>
-              </h4>
-                {authors ? authors.map(
-                  author => <BookAuthor key={author} author={author} />
-                ) : 'no authors'}
-              <div className="card-text">
-                {year}
-                {' '}
-                <BookAgeBadge isNew={year > 2010} />
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    }}
+    {
+      ({ book }) => book && <BookCardPure {...book} toggleView={toggleView} />
+    }
   </BookInfoProvider.Consumer>
 );
 

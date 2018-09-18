@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink as Link } from 'react-router-dom';
 
+import './styles.css';
 import { getBookInfo } from './BookInfo/book';
 import book from './book.json';
 import book2 from './book-2.json';

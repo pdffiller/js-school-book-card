@@ -13,11 +13,15 @@ const idX = x => x;
 export const connect = (selector = idX) => Component => {
   const Connected = props => (
     <Consumer>
-      { context => <Component {...props} {...selector(context)} />}
+      { context => <Component {...selector(context)} {...props} /> }
     </Consumer>
   );
 
-  Connected.displayName = `connected(${Component.displayName || Component.name})`;
+  if (process.env.NODE_ENV !== 'production') {
+    Connected.displayName = `connected(${
+      Component.displayName || Component.name
+    })`;
+  }
 
   return Connected;
 }
@@ -44,7 +48,7 @@ class BookInfoProvider extends React.Component {
   }
 
   componentDidMount() {
-    this.loadBook()
+    this.loadBook();
   }
 
   componentDidUpdate(prevProps) {
@@ -58,14 +62,16 @@ class BookInfoProvider extends React.Component {
     this.setState(updateBook(data));
   }
 
+  getContext() {
+    return {
+      ...this.state,
+      updateBook: this.updateBook
+    };
+  }
+
   render() {
     return (
-      <Provider
-        value={{
-          ...this.state,
-          updateBook: this.updateBook
-        }}
-      >
+      <Provider value={this.getContext()}>
         {this.props.children}
       </Provider>
     );
