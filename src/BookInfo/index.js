@@ -1,28 +1,24 @@
 import React from 'react';
 import BookCard from './BookCard';
 import BookInfoForm from './BookInfoForm';
-import { updateBook, fetchBook } from './book';
+import BookInfoProvider from './BookInfoProvider';
 
 const BI_MODE_VIEW = 'view';
 const BI_MODE_EDIT = 'edit';
-const BI_MODE_LOAD = 'load';
 
-const isView = mode => (
+const isView = (status, mode) => (
+  status === 'ready' &&
   mode === BI_MODE_VIEW
 );
 
-const isEdit = mode => (
+const isEdit = (status, mode) => (
+  status === 'ready' &&
   mode === BI_MODE_EDIT
-);
-
-const isLoad = mode => (
-  mode === BI_MODE_LOAD
 );
 
 class BookInfo extends React.Component {
   state = {
-    mode: BI_MODE_LOAD,
-    book: null
+    mode: BI_MODE_VIEW,
   }
 
   toggleView = () => this.setState(
@@ -33,38 +29,21 @@ class BookInfo extends React.Component {
     })
   );
 
-  handleBookChange = data => {
-    this.setState(
-      updateBook(data)
-    );
-  }
-
-  loadBook() {
-    const { url } = this.props;
-    fetchBook(url)
-      .then(this.handleBookChange)
-      .then(
-        () => this.setState({
-          mode: BI_MODE_VIEW
-        })
-      )
-  }
-
-  componentDidMount() {
-    this.loadBook();
-  }
-
   render() {
-    const { book, mode } = this.state;
-    const handlers = {
-      toggleView: this.toggleView,
-      onChange: this.handleBookChange,
-    }
+    const { mode } = this.state;
+    const { id } = this.props;
+    const url = `https://www.googleapis.com/books/v1/volumes/${id}`;
     return (
-      isView(mode) ? <BookCard {...book} {...handlers} /> :
-      isEdit(mode) ? <BookInfoForm {...book} {...handlers} /> :
-      isLoad(mode) ? 'Loading ...' :
-      null
+      <BookInfoProvider url={url}>
+        <BookInfoProvider.Consumer>
+          {({ status }) => (
+            isView(status, mode) ? <BookCard toggleView={this.toggleView} /> :
+            isEdit(status, mode) ? <BookInfoForm toggleView={this.toggleView} /> :
+            status === 'loading' ? 'Loading ...' :
+            null
+          )}
+        </BookInfoProvider.Consumer>
+      </BookInfoProvider>
     );
   }
 }

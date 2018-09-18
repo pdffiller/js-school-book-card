@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from './BookInfoProvider';
 
 class BookInfoForm extends React.Component {
   constructor(props) {
@@ -84,4 +85,9 @@ class BookInfoForm extends React.Component {
   }
 }
 
-export default BookInfoForm;
+const getProps = ({ book, updateBook }) => ({
+  ...book,
+  onChange: updateBook
+});
+
+export default connect(getProps)(BookInfoForm);

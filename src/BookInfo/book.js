@@ -1,4 +1,4 @@
-const getBookInfo = ({ id, volumeInfo }) => ({
+export const getBookInfo = ({ id, volumeInfo }) => ({
   id,
   title: volumeInfo.title,
   authors: volumeInfo.authors,
